@@ -1,0 +1,23 @@
+{
+  "name": "automation_project-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --headed",
+    "test_Q1": "npx playwright test tests/Q1.spec.js --headed",
+    "test_Q2": "npx playwright test tests/Q2.spec.js --headed",
+    "test_Q3": "npx playwright test tests/Q3.spec.js --headed",
+    "generate_report": "allure generate ./allure-results",
+    "open_report": "allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.3"
+  }
+}
